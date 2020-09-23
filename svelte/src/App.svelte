@@ -1,12 +1,14 @@
 <script lang="ts">
-	import { stringFunctions } from './scripts';
-	import { test } from '@foo/scripts/index';
+	import { other } from '@foo/scripts';
+	import { double } from '@foo/scripts/test';
+	import { more } from '@foo/scripts/more';
 	export let name: string;
 </script>
 
 <main>
-	<h1>Hello {stringFunctions.double(name)}!</h1>
-	<h1>Hello {test.id(name)}!</h1>
+	<h1>Hello {other.reverse(name)}!</h1>
+	<h1>Hello {double(name)}!</h1>
+	<h1>Hello {more.newer(name)}</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 

@@ -1,1 +1,1 @@
-export const id = <T>(x: T): T => x;
+export const double = (x: string)  => x + ' ' + x;

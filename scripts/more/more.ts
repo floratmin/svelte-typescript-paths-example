@@ -1,0 +1,1 @@
+export const newer = (x: string)  => ' new ' + x;

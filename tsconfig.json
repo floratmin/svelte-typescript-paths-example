@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+
+  "include": ["svelte/src/**/*", "scripts/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "svelte/public/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@foo/scripts": ["scripts/index.ts"],
+      "@foo/scripts/*": ["scripts/*"]
+    }
+  }
+}
