@@ -1,0 +1,1 @@
+export const double = (x: string)  => x + ' ' + x;

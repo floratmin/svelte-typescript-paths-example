@@ -1,0 +1,1 @@
+export * as stringFunctions from './string-functions';
